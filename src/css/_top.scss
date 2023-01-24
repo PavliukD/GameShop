@@ -8,16 +8,94 @@
     background-blend-mode: screen, normal, normal, normal;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: 'Manrope';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.3;
 }
 
 .top-list{
     display: grid;
     grid-template-columns: repeat(4, 4fr);
     gap: 20px;
+    margin-top: 20px;
 }
 
 .top-list-item{
     outline: 1px solid tomato;
     max-width: 300px;
     max-height: 580px;
+}
+
+.top-list-item-main{
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.top-list-item-image{
+    display: block;
+    height: 100%;
+    width: auto;
+}
+
+.button-to-cart{
+    position: absolute;
+    bottom: 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: $buttonMainColor;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 260px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.3;
+    color: $primaryTextColor;
+}
+
+.top-card-title-wrap{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #06030F;
+    padding: 7px 13px;
+    border-radius: 8px;
+}
+
+.top-card-title{
+    background: conic-gradient(from 180deg at 50.93% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg), radial-gradient(78.31% 80.25% at 11.77% 28.24%, rgba(110, 124, 251, 0.52) 7.61%, rgba(251, 66, 255, 0.52) 35.14%, rgba(255, 66, 247, 0.52) 63.45%, rgba(66, 119, 255, 0.52) 100%), conic-gradient(from 180deg at 49.45% 50%, #E8EDF1 -3.44deg, #D6DFE6 56.25deg, #FAFBFC 133.38deg, #F6D0FF 215.62deg, #D7E0E7 311.43deg, #F7F8F9 313.84deg, #E8EDF1 356.56deg, #D6DFE6 416.25deg), #FFFFFF;
+    background-clip: text;
+    text-fill-color: transparent;
+    background-blend-mode: screen, normal, normal, normal;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.3;
+    font-family: 'Manrope';
+}
+
+.button-favorite{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 100%;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-list-item-meta{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
